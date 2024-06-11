@@ -12,6 +12,7 @@ public class EnemigoDestroi : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
             GameObject go = Instantiate(Explocion, collision.transform.position, collision.transform.rotation);
+
             Destroy(go, 0.5f);
         }
     }
